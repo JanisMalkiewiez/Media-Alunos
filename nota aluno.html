@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estrutura de Condição</title>
+        <meta charset="UTF-8" />
+
+        <script>
+        // Recuperação das 4 notas do aluno;
+
+        const n1 = Number(prompt('Digite a nota 1'))
+        const n2 = Number(prompt('Digite a nota 2'))
+        const n3 = Number(prompt('Digite a nota 3'))
+        const n4 = Number(prompt('Digite a nota 4'))
+
+        // Cálculo da média final, sendo que a média é igual a soma das notas dividido por 4 //
+
+        const media = (n1 + n2 + n3 + n4) / 4  
+        console.log("A média final é " + media)
+        
+        // Verificar a média final Se a média for maior ou igual a 15 exiba aprovado //
+        if(media >= 15){
+            console.log("Aprovado")    
+        } 
+        // Caso ao contrário se a media for menor do que 15 exiba reprovado //
+        else if(media >= 14 & media < 15){
+            console.log("Recuperação")
+        }
+        // Se não exiba Reprovado //
+        else {
+            console.log("Reprovado, estude mais da próxima vez!")
+        }
+    
+        </script>
+    </head>
+    <body>
+    </body>    
+</html>
